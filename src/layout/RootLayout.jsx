@@ -1,17 +1,16 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import MainNavigation from './MainNavigation'
+import { Outlet } from 'react-router-dom';
+import MainNavigation from './MainNavigation';
 
 const RootLayout = () => {
   return (
     <>
-    <MainNavigation/>
-    <main>
-      {/* router에서 설정한 children page들이 Outlet에 렌더링됨*/}
-    <Outlet/>
-    </main>
+      <MainNavigation />
+      <main>
+        {/* router에서 설정한 chidren page들이 Outlet에 렌더링됨 */}
+        <Outlet />
+      </main>
     </>
-  )
-}
+  );
+};
 
-export default RootLayout
+export default RootLayout;
